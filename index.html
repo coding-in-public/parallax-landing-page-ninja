@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-bkg text-base text-white selection:bg-accent selection:text-bkg">
-    <div id="parallax">
+  <body class="bg-bkg text-base text-white selection:bg-accent selection:text-bkg overflow-hidden">
+    <div class="h-screen pb-12 sm:pb-0 overflow-y-auto overflow-x-hidden relative scroll-smooth perspective">
       <nav class="grid place-items-center absolute w-full top-0 z-50 drop-shadow-text-sm" aria-label="Primary Navigation">
         <a href="/" aria-label="Go Home" class="p-1 m-4 focus:outline-none focus-visible:ring-4 ring-accent rounded-full transition-shadow">
           <svg width="280" class="w-32 sm:w-48 lg:w-56" viewBox="0 0 357 86" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,22 +19,22 @@
           </svg>
         </a>
       </nav>
-      <header class="min-h-screen flex flex-col justify-evenly items-center relative">
+      <header class="min-h-screen flex flex-col justify-evenly items-center relative preserve-3d">
         <div class="absolute bg-gradient-to-b inset-0 bottom-3/4 from-accent to-transparent"></div>
-        <div class="absolute bg-gradient-to-t inset-0 top-1/3 -bottom-32 from-bkg/80 to-transparent"></div>
+        <div class="absolute bg-gradient-to-t inset-0 top-1/3 -bottom-32 from-bkg/80 to-transparent distance-1"></div>
         <img
           sizes="(min-width: 500px) 480w, 650w, 800w, 1300w"
           srcset="./images/hero-xs.jpg 480w, ./images/hero-sm.jpg 650w, ./images/hero-md.jpg 800w, ./images/hero-lg.jpg 1300w"
-          class="absolute h-full w-full -z-20 object-cover object-center"
+          class="absolute h-full w-full -z-20 object-cover object-center distance-1"
           src="./images/hero.jpg"
           aria-hidden="true">
-        <h1 class="text-5xl text-center font-bold text-white tracking-wide py-12 drop-shadow-text-sm lg:drop-shadow-text-lg">
+        <h1 class="text-5xl text-center font-bold text-white tracking-wide py-12 drop-shadow-text-sm lg:drop-shadow-text-lg distance-2">
           Unique Trips for<br>
           Adventurous <br>
           Travelers
         </h1>
         <a href="#contact-form"
-          class="bg-accent text-bkg font-medium py-3 px-8 rounded-full border border-bkg focus:outline-none focus-visible:ring-4 ring-accent ring-offset-bkg ring-offset-2 hover:bg-accent/90 flex space-x-2 drop-shadow-text-lg hover:drop-shadow-none transition-shadow"
+          class="bg-accent text-bkg font-medium py-3 px-8 rounded-full border border-bkg focus:outline-none focus-visible:ring-4 ring-accent ring-offset-bkg ring-offset-2 hover:bg-accent/90 flex space-x-2 drop-shadow-text-lg hover:drop-shadow-none transition-shadow distance-2"
         >
           <span class="uppercase tracking-wide">Book a Trip</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="96 184 32 200 32 56 96 40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline><polygon points="160 216 96 184 96 40 160 72 160 216" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polygon><polyline points="160 72 224 56 224 200 160 216" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline></svg>
