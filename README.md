@@ -2,12 +2,12 @@
 
 During the course of this series, we’ll use HTML, TailwindCSS, and vanilla JavaScript to create a responsive, parallax landing page.
 
-![Preview of Landing Page](./preview.png)
+![Preview of Landing Page](./preview.jpeg)
 
 ## Lesson Help
 If you get stuck on any lesson in the series, navigate to the course branch for your current lesson and view or download the code for more help.
 
-![Preview of downloading code in github](./github.png)
+![Preview of downloading code in github](./github.jpeg)
 
 ## Assumptions
 In this series, I’ll assume you have a working knowledge of both Tailwind CSS and JavaScript. If you need help, see the Net Ninja’s introductory series on either topic.
