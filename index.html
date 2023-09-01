@@ -2,16 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./images/logomark.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark" />
-    <title>Vite App</title>
+    <title>Sample landing page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body class="bg-bkg text-white selection:bg-accent
-  selection:text-bkg overflow-hidden">
+  selection:text-bkg ">
+  <!-- overflow-hidden not displayed -->
     <div id="parallax">
       <nav class="grid place-items-center absolute w-full top-0 z-5 drop-shadow-text-sm" aria-label="primary navigation">
         <a href="/" aria-label="Go Back Home" class="p-1 m-4">
@@ -22,7 +23,7 @@
       </nav>
       <header class="min-h-screen flex flex-col justify-evenly items-center relative">
         <div class="absolute bg-gradient-to-b inset-0 bottom-3/4 from-accent to-transparent"></div>
-        <div class="absolute bg-gradient-to-t inset-0 top-1/3 -bottom-32 from-bkg/80 to-transparent"></div>
+        <div class="absolute bg-gradient-to-t inset-0 top-1/3 -bottom-36 from-bkg/80 to-transparent"></div>
         <!-- Hero IMG -->
         <img 
         sizes="(min-width: 500px) 480w, 650w, 800w, 1300w" srcset="./images/hero-xs.jpg 480w, ./images/hero-sm.jpg 650w, ./images/hero-md.jpg 800w,
@@ -44,12 +45,36 @@
       </header>
 
       <main class="relative mt-16 sm:mt-24 lg:mt-40 pb-16
-      -mt-16 grid gap-16 sm:gap-24 lg:gap-40 overflow-hidden ">
-      <section>
+       grid gap-16 sm:gap-24 lg:gap-40 overflow-hidden">
+      <section aria-labelledby="headline" class="container grid gap-4 text-center max-w-prose ">
         <div>
-          <small>What Dreams are made off </small>
-          <h2>Trips for Explorers</h2>
-          <p> Trust is the cornerstone of travel, and we take that seriously. Our platform is backed by a community of seasoned travelers who share their insights and reviews, guiding you toward the best experiences. Dive into destination guides written by experts, uncover hidden gems, and learn from the firsthand experiences of fellow explorers. </p>
+          <small class="tracking-widest text-accent uppercase drop-shadow-text-sm">What Dreams Are Made Off </small>
+          <h2 id="headline" class="text-3xl font-bold tracking-wide drop-shadow-text-md">Trips for Explorers</h2>
+          <p class="text-muted drop-shadow-text-sm mt-10"> Trust is the cornerstone of travel, and we take that seriously. 
+            Our platform is backed by a community of seasoned travelers who share their insights and reviews, 
+            guiding you toward the best experiences. Dive into destination guides written by experts, uncover hidden gems, 
+            and learn from the firsthand experiences of fellow explorers. </p>
+        </div>
+      </section>
+      <section aria-labelledby="slider" class="container grid gap-4 text-center sm:text-left relative ">
+        <div>
+          <small class="tracking-widest text-accent uppercase drop-shadow-text-sm">Off the Beaten Path</small>
+          <h2 id="slider" class="text-3xl font-bold tracking-wide drop-shadow-text-md">Destination on Track</h2>
+          </div>
+          <div class="flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center space-x-4 space-y-4">
+          <p class="text-muted drop-shadow-text-sm"> Trust is the cornerstone of travel, and we take that seriously. 
+            Our platform is backed by a community of seasoned travelers who share their insights and reviews, 
+            guiding you toward the best experiences. Dive into destination guides written by experts, uncover hidden gems, 
+            and learn from the firsthand experiences of fellow explorers. </p>
+            <!-- Slider BTN -->
+            <div class="flex space-x-4">
+              <button data-slideBtn id="next" aria-label="show next image">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="pointer-events-none" fill="currentColor" viewBox="0 0 256 256"><path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm52-84a12,12,0,0,1-12,12H117l11.52,11.51a12,12,0,0,1-17,17l-32-32a12,12,0,0,1,0-17l32-32a12,12,0,0,1,17,17L117,116h51A12,12,0,0,1,180,128Z"></path></svg>
+              </button>
+              <button data-slideBtn id="next" aria-label="show next image">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="pointer-events-none" fill="currentColor" viewBox="0 0 256 256"><path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm48.49-92.49a12,12,0,0,1,0,17l-32,32a12,12,0,1,1-17-17L139,140H88a12,12,0,0,1,0-24h51l-11.52-11.51a12,12,0,1,1,17-17Z"></path></svg>                
+              </button>
+            </div>
         </div>
       </section>
       </main>
