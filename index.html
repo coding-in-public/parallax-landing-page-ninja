@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-bkg text-white selection:bg-accent
+  <body class="bg-bkg text-base text-white selection:bg-accent
   selection:text-bkg ">
   <!-- overflow-hidden not displayed -->
     <div id="parallax">
@@ -68,10 +68,13 @@
             and learn from the firsthand experiences of fellow explorers. </p>
             <!-- Slider BTN -->
             <div class="flex space-x-4">
-              <button data-slideBtn id="next" aria-label="show next image">
+              <button data-slideBtn id="previous" class="grid place-items-center bg-accent hover:bg-accent/90 rounded-full p-2
+              text-bkg focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg ring-accent" disabled
+               aria-label="show previous image">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="pointer-events-none" fill="currentColor" viewBox="0 0 256 256"><path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm52-84a12,12,0,0,1-12,12H117l11.52,11.51a12,12,0,0,1-17,17l-32-32a12,12,0,0,1,0-17l32-32a12,12,0,0,1,17,17L117,116h51A12,12,0,0,1,180,128Z"></path></svg>
               </button>
-              <button data-slideBtn id="next" aria-label="show next image">
+              <button data-slideBtn id="next" class="grid place-items-center bg-accent hover:bg-accent/90 rounded-full p-2
+              text-bkg focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg ring-accent disabled:bg-accent/20 disabled:text-accent" aria-label="show next image">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="pointer-events-none" fill="currentColor" viewBox="0 0 256 256"><path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm48.49-92.49a12,12,0,0,1,0,17l-32,32a12,12,0,1,1-17-17L139,140H88a12,12,0,0,1,0-24h51l-11.52-11.51a12,12,0,1,1,17-17Z"></path></svg>                
               </button>
             </div>
